@@ -19,18 +19,22 @@ import java.util.stream.Collectors;
  */
 public class CoinFlipper {
     long numberOfCoins = 100;
+    long incrementCoins = 1000;
 
     final int numberOfFlips = 10;
-
     public static void main(String[] args) throws InterruptedException {
         CoinFlipper coinFlipper = new CoinFlipper();
 
         for(;;){
             coinFlipper.doTheWork();
-            Thread.sleep(1 * 1000);
+            coinFlipper.incrementCoins();
 
-            coinFlipper.numberOfCoins += 1000;
+//            Thread.sleep(1 * 1000);
         }
+    }
+
+    private void incrementCoins() {
+        this.numberOfCoins += incrementCoins;
     }
 
     public void doTheWork(){
@@ -41,8 +45,8 @@ public class CoinFlipper {
         }
 
         printInput();
-        printAvgNoise(flips);
         printResults(flips);
+        printAvgNoise(flips);
 
         System.out.println();
     }
@@ -66,7 +70,7 @@ public class CoinFlipper {
      * */
     private void printAvgNoise(List<FlipsResult> flips) {
 
-        System.out.print(String.format("\n%-11s| ", "avg |noise|"));
+        System.out.print(String.format("\n%-11s| ", "avg noise"));
 
         List<Double> noises = flips.stream()
             .map(f -> Math.abs(observeNoisePercent(f)))
