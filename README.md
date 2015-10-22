@@ -15,7 +15,7 @@ como o valor de **avg noise** se **aproxima (mas nunca chega)** a zero.
     observes   | quantidade de CARAS do resultado    
     observes % | porcentagem de CARAS para cada partida     
     noise      | quanto o resultado de CARA se desviou de 50%
-    avg noise  | média do quanto o resultado de CARA se desviou de 50%
+    avg noise  | média de quanto o resultado de CARA se desviou de 50%
 ```
 
 * Observe um resultado [aqui](https://raw.githubusercontent.com/hevilavio/math-samples/master/sample.out)
