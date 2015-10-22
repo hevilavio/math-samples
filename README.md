@@ -4,10 +4,10 @@ Alguns algoritmos relacionados com matemática e estatística.
 As ideias vieram de alguma coisas que eu li:
 - Livro: O poder do pensamento matemático - Jordan Ellenberg
 
-##### CoinFlipper
+##### [CoinFlipper](https://github.com/hevilavio/math-samples/blob/master/src/CoinFlipper.java)
 Mostra que em uma partida de cara-ou-coroa, quanto maior o numero de moedas lançadas simultaneamente, maior a chance de nos aproximarmos de um resultado 50-50.
-* Manipule o valor das variáveis **numberOfCoins** e **incrementCoins** para observar 
-como o valor de **avg noise** se **aproxima (mas nunca chega)** a zero.
+* Manipule o valor das variáveis *numberOfCoins* e *incrementCoins* para observar 
+como o valor de *avg noise* se aproxima (mas nunca chega) a zero.
 * Significado:
 ```
     flips      | quantidade de partidas executadas
